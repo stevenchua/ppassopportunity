@@ -1,0 +1,96 @@
+<%- include header.ejs %>
+<style type="text/css">    
+        .container {
+          width: 100%;
+        }
+</style>
+<div class="subnav explore-opportunity">
+    <h2>Opportunities</h2>
+    <hr>
+</div>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/submit-opportunity"><span class="glyphicon glyphicon-plus"></span>  Create Opportunity</a></li>
+        <li class="dropdown">
+
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">            
+            <li><a  href="/export">Export</a></li>
+            <li class="divider"></li>
+            <li><a data-toggle="modal" href="/import" data-target="#myModal">Import</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div style="margin-top: 1em;" class="full_width">
+<div role="grid" class="dataTables_wrapper" id="example_wrapper">
+    <table cellpadding="0" cellspacing="0" border="0" class="display dataTable" id="datatable-opportunities">
+    <thead id="colls">
+        <tr>
+            <th >Name</th>
+            <th >Description</th>
+            <th >Owner</th>
+            <th>Relevant APIs and Capabilities</th>
+            <th>PPaaS Status</th>
+            <th >Rank</th>
+            <th width="20px;">ID</th>
+        </tr>
+    </thead>    
+    <thead class="searchfilter">    
+        <tr >
+       
+      
+        <th class="ui-state-default">
+            <input type="text" id="id3" name="opportunityname" class="search_init input-medium " />
+        </th>
+        <th class="ui-state-default">
+            <input type="text" id="id3" name="description" class="search_init input-medium " />
+        </th>       
+         <th class="ui-state-default">
+            <input type="text" id="id3" name="markets" class="search_init input-medium " />
+        </th>
+         <th class="ui-state-default">
+            <input type="text" id="id3" name="Relevant_APIs_and_capabilities" class="search_init input-medium " />
+        </th>
+        <th class="ui-state-default">
+            <input type="text" id="id3" name="PPaaS_Status" class="search_init input-medium " />
+        </th>
+         <th class="ui-state-default">
+            <input type="text" id="id3" name="rank" class="search_init input-medium " />
+        </th>
+        <th class="ui-state-default">
+            <input type="text small" id="id2" name="id" class="search_init input-medium " />
+        </th>
+       
+    </tr>
+    </thead>
+    <tbody>     
+    </tbody>
+</table>
+</div>
+</div>
+
+<%- include footer.ejs %>
+<script type="text/javascript" src="/js/datatable_bootstrap.js"></script>
+
+<script type="text/javascript" src="/js/explore-opportunity.js"></script>
+

@@ -1,0 +1,164 @@
+/* global */
+body { background-color: #FFF; color: #333; font-size:11px; font-family: tahoma; letter-spacing: 0.1em;}
+
+/* bootstrap css override */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {padding-right: 5px; padding-left: 5px;}
+.form-horizontal .form-group, .row {margin-right: 0; margin-left: 0;}
+.navbar-inverse .navbar-nav > li > a {color: #FFF;}
+
+.gutter-left {padding-left: 0;}
+.gutter-right {padding-right: 0;}
+.gutter-space {padding-left: 5px; padding-left: 5px;}
+.gutter {padding:0;}
+.space-left {margin-left: 5px;}
+.space.right { margin-right: 5px; }
+
+a { color: #FFF; text-decoration:  none; text-transform: uppercase; }
+a:hover {color: #666; text-decoration:  none; }
+.nav > li > a:hover, .nav > li > a:focus { background-color: transparent;}
+.close-icon { padding: 6px;}
+p {margin: 0;}
+
+/* Form Content  */
+::-webkit-input-placeholder {color: #cccccc;}
+:-moz-placeholder {color: #cccccc;} /* Firefox 18- */
+::-moz-placeholder {color: #cccccc;} /* Firefox 19+ */
+:-ms-input-placeholder {color: #cccccc;}
+ 
+[placeholder]:focus::-webkit-input-placeholder {color: transparent;}
+[placeholder]:focus:-moz-placeholder {color: transparent;} /* Firefox 18- */
+[placeholder]:focus::-moz-placeholder  {color: transparent;} /* Firefox 19+ */
+[placeholder]:focus:-ms-input-placeholder  {color: transparent;}
+
+label {font-weight: normal;}
+.form-control {padding: 6px;}
+.form-horizontal .control-label {text-align: left;  font: bold 1.3em/1.5em tahoma;}
+.form-horizontal .inline .control-label {padding: 6px 0;}
+.required-indicator {color:#CC0000; font-size: 11px; top: -0.2em;}
+.opportunities-btn {border-radius: 24px; font-size: 15px; min-width: 200px; padding: 16px 30px;}
+select.multiple {height: 118px;}
+.notations {padding: 6px 5px 6px 0;}
+.btn {font: 1em/1.5em tahoma; text-transform: uppercase;}
+
+input[type="text"], input[type="password"], input[type="number"], input[type="tel"], input[type="email"], select  { color: #545454}
+
+/* error Class */
+/* remove the next line when you have trouble in IE6 with labels in list */
+form label.error, label.error {	color: #CC0000;}
+div.error { display: none; }
+input.error { border: 1px solid #CC0000; }
+.form-control.error:focus {border-color: #CC0000; box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(204, 0, 0, 0.6); outline: 0 none;}
+
+/* Navigation */
+.navbar {margin: 0;}
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {margin-left: 0;}
+.navbar-inverse .navbar-brand {color: #FFF;}
+.navbar-inverse { background-color: rgba(0, 0, 0, 0.2); border-color: #333; border-radius: 5px;}
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus { background-color: rgba(0, 0, 0, 0.3); color: #fff; }
+.navbar-inverse .navbar-nav > li > a:hover, 
+.navbar-inverse .navbar-nav > li > a:focus {background-color: rgba(0, 0, 0, 0.1); color: #fff;}
+
+.global-header .navbar-inverse {background-color: transparent;}
+.global-header .navbar-inverse .navbar-nav > li > a:hover, 
+.global-header .navbar-inverse .navbar-nav > li > a:focus {background-color: rgba(0, 0, 0, 0.2); color: #fff;}
+
+
+/* Custom font */
+
+
+/* Layout Styling */
+.cs-wrapper { width: 100%; }
+.container { width: 1000px; }
+
+/* global layout */
+header {background-color: #1a1a1a; border-bottom: 1px solid #101010;}
+
+ul.top-nav { padding: 15px 0; }
+ul.top-nav li {display: inline-block; }
+
+
+/* header */
+.main #header {background-color: transparent; border: medium none; width: 100%; }
+.header { padding:  20px 0}
+.logo-content {color: #FFF; font: 2.5em/1em tahoma; padding: 10px 20px;}
+
+/* .header .logo {}
+
+a.logo-content:hover {color: #FFF;}
+ */
+
+.main { background: url("../image/innovation_imga.jpg") no-repeat scroll top center transparent; min-height: 650px;}
+.content-fill {padding: 120px 120px 203px 120px;}
+.innovation {color: #fff; font: 2em/2em tahoma;}
+.start-with-u {color: #fff; font: bold 4em/1.5em tahoma; padding: 0 0 10px;}
+.opportunities-button { padding: 10px 0;}
+
+.home-page-content { padding: 100px;}
+.solutions {font: 2.5em/1.5em 'monotype corsiva'; padding: 0 0 10px;}
+.enabling {font: 1.5em/1.5em tahoma;}
+
+/* submit opportunity */
+.primary {padding:  25px 0}
+.submit-opportunity {}
+.submit-opportunity h2 {clear: both; font: 1.5em/1.7em tahoma; margin: 0 0 18px; padding: 5px 0; text-transform: uppercase;font-weight:bold; border-bottom: 1px solid #999;}
+.submit-opportunity h2 a, .submit-opportunity h2 a:visited {  color: #000;}
+.submit-opportunity p.top-submit-btn {font: 1em/1.5em tahoma; border-bottom: 1px solid #e5e5e5; overflow: hidden; padding: 0 0 5px;}
+.submit-opportunity p .heading-txt {padding: 10px 0 0;}
+.submit-opportunity h2 a.collapsed {
+  background: url("../images/collapse-icons.png") no-repeat scroll left -18px transparent;
+  padding-left: 20px;
+}
+.submit-opportunity h2 a {
+  background: url("../images/collapse-icons.png") no-repeat scroll left 6px transparent; 
+  padding-left: 20px;
+}
+.submit-opportunity h2 a.blue {
+  color: blue;
+}
+.submit-opportunity .form-group.well.white {
+  background: none repeat scroll 0 0 #fff;
+}
+.submit-opportunity .form-group.well {
+  font-size: 16px;
+}
+.form-opportunity fieldset { padding: 20px 0 0; border: medium none;}
+.form-opportunity .add-remove {padding: 26px 5px;}
+
+.form-opportunity .references-link {padding: 6px 0 6px 5px;}
+.form-opportunity a.link {color: #1a1a1a; text-transform: none; text-decoration: underline;}
+.add-references {padding: 10px 0 0;}
+.remove-achive {padding: 9px 0 9px 10px}
+.form-opportunity a.add-record { color: #333;}
+.submit-opportunity p.bottom-submit-btn {border-top: 1px solid #e5e5e5; padding: 10px 0 0; overflow: hidden;}
+.references{margin-bottom: 10px;}
+.usecase{border-bottom: 1px solid #ccc;margin-bottom:10px;}
+.layout-slider{margin:10px 0;}
+.remove-capabilities{  clear: both;  margin-bottom: 10px;}
+.capabilities hr {clear: both; width: 100%;}
+
+.success-response { min-height: 400px;}
+.success-response h2 { font: bold 2.2em/1em tahoma; margin: 0; padding: 30px 0 0; text-transform: capitalize; }
+.success-response  p { font: 1.2em/1em tahoma; padding: 20px 0; margin: 0;}
+.success-response a {text-transform: none;color: blue;}
+/* Explore Opportunity */
+table.dataTable tbody tr td:nth-child(1) {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.container.explore-opportunity {
+  width: 100%;
+}
+/* footer */
+footer { background-color: #efefef; padding: 20px 0; }
+
+
+/* pop up */
+h4.modal-title {color: #545454; font: bold 1.3em/1.5em tahoma; text-align: center; text-transform: uppercase;}
+.data-heading {background-color: #5cb85c; color: #FFF; font: bold 1.1em/1.5em tahoma; padding: 5px 0; }
+.data-list-light {background-color: #f7f7f9; color: ##545454; font: 1.1em/1.5em tahoma; padding: 3px 0;}
+.data-list-dark {background-color: #d5d5d5; color: #545454; font: 1.1em/1.5em tahoma; padding: 3px 0;}
+
+ul.cap-heading , ul.cap-data { margin: 0; padding: 0;}
+ul.cap-heading li , ul.cap-data li{display: block; list-style: none outside none; padding: 2px 0;}

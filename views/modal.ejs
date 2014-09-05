@@ -1,0 +1,145 @@
+<div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="divue">&times;</span><span class="sr-only">Close</span></button>
+  <h4 class="modal-title" id="myModalLabel">View Record</h4>
+</div>
+
+<div class="modal-body">      
+
+  
+
+  <div class="row data-list-dark">
+      <div class="col-md-4">Name:</div>
+      <div class="col-md-8">
+          <%= data.opportunityname %>
+      </div>
+  </div>
+
+  <div class="row data-list-light">
+      <div class="col-md-4">Description:</div>
+      <div class="col-md-8">
+          <%= data.description %>
+      </div>
+  </div>
+
+  <div class="row data-list-dark">
+      <div class="col-md-4">Markets:</div>
+      <div class="col-md-8">
+          <%= data.markets %>
+      </div>
+  </div>
+
+  <div class="row data-list-light">
+      <div class="col-md-4">Capabilities:</div>
+      <div class="col-md-8"> 
+        <div class="col-md-6 gutter-left"> 
+            <% var  marketcountry = data.capabilities_marketcountry.split(',') %>
+            <% for(var k in marketcountry ) { %>
+              <%= marketcountry[k] %>
+            <% } %>
+
+            <ul class="cap-heading">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+            </ul>
+        </div>
+        <div class="col-md-6 gutter-right"> 
+            <% var  areas = data.capabilities_area.split('|'); %>
+            <% for(var k in areas ) { %>
+              <% var  area = areas[k].split(',') %>
+                <% for(var k in area ) { %>
+                  <%= area[k] %>
+                <% } %>
+            <% } %>
+
+            <ul class="cap-data">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+            </ul>
+        </div>
+      </div>
+  </div>
+
+  <div class="row data-list-dark">
+      <div class="col-md-4">Customer:</div>
+      <div class="col-md-8">
+          <%= data.customer %>
+      </div>
+  </div>
+
+  <div class="row data-list-light">
+      <div class="col-md-4">Deadline:</div>
+      <div class="col-md-8">
+          <%= data.deadline %>
+      </div>
+  </div>
+
+  <div class="row data-list-dark">
+      <div class="col-md-4">Reference:</div>
+      <div class="col-md-8">
+          <div class="col-md-12">         
+          <% var  url = data.reference_url.split(',') %>
+            <% for(var k in url ) { %>
+              <%= url[k] %>
+            <% } %>
+        </div>
+       
+      </div>
+  </div>
+
+  <div class="row data-list-light">
+      <div class="col-md-4">Usecase:</div>
+      <div class="col-md-8">
+       
+      </div>
+  </div>
+
+  <div class="row data-list-dark">
+      <div class="col-md-4">ROI:</div>
+      <div class="col-md-8"><%- data.roi_range %> <%- data.roi_value %></div>
+  </div>
+
+  <div class="row data-list-light">
+      <div class="col-md-4">TVP:</div>
+      <div class="col-md-8"><%= data.tvp_range %> <% data.tvp_value %></div>
+  </div>
+
+  <div class="row data-list-dark">
+      <div class="col-md-4">enPS:</div>
+      <div class="col-md-8"><%= data.enps_range %> <% data.enps_value %></div>
+  </div>
+
+  <div class="row data-list-light">
+      <div class="col-md-4">Strategy:</div>
+      <div class="col-md-8"><%= data.strategy_range %> <% data.strategy_value %></div>
+  </div>
+
+  <div class="row data-list-dark">
+      <div class="col-md-4">Owner:</div>
+      <div class="col-md-8">
+          <%= data.owner %>
+      </div>
+  </div>
+
+  <div class="row data-list-light">
+      <div class="col-md-4">Created Date:</div>
+      <div class="col-md-8">
+          <%= data.created_date %>
+      </div>
+  </div>
+
+  <div class="row data-list-dark">
+      <div class="col-md-4">Updated:</div>
+      <div class="col-md-8">
+          <%= data.updated %>
+      </div>
+  </div>
+        
+</div>
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>

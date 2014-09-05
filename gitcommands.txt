@@ -1,0 +1,12 @@
+git pull // update with remote repostary file.
+git status // It shows file modified
+git add -A // Prepare all changes to commit
+git commit -m "Message"
+git push origin master
+
+ec2-user@ec2-54-191-43-171.us-weset-2.compute.amazonaws.com
+ ssh -i ppaas.pem ec2-user@ec2-54-191-43-171.us-west-2.compute.amazonaws.com
+
+Thank you for initating engagement with PPaaS.  A PPaaS Portfolio Manager will be in contact with you within 24 hours.  Your entries have been posted here [make “here” become a hyperlink: http://54.191.43.171/explore-opportunity]
+Based on your response to the Product Policy Section, you will not need to fill-out the Product Policy “High-level” Questionnaire” and can sign-up directly for their Office Hours here [make “here” become a hyperlink:http://tinyurl.com/pmdrcu9]”
+[10:53:14 PM] Steven Chua: thanks
